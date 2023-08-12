@@ -1,0 +1,62 @@
+@import url(./button.css);
+@import url(./keyframes.css);
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrapper {
+    height: 100vh;
+    @include center;
+    .join-form {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        font-size: 0.85rem;
+        background: rgba(30, 30, 30, 0.5);
+        border: 3px solid rgba(30, 30, 30, 0.2);
+        border-radius: 0.5rem;
+        backdrop-filter: blur(15px);
+        animation: transitionIn 2s;
+        transition: transform 0.5s;
+    }
+    .input {
+        @include center;
+        margin-bottom: .2rem;
+        input {
+            margin-bottom: .08rem;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-radius: 2rem;
+            border: 2px solid rgba(30, 30, 30, 0.2);
+            height: .25rem;
+            width: 17rem;
+            padding: 15px;
+            &::placeholder {
+                color: rgba(255, 255, 255, .7);
+            }
+            &:active {
+                border: 2px solid rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    .radio {
+        @include center;
+    }
+    .dropdown {
+        @include center;
+    }
+    .date {
+        @include center;
+    }
+    .button {
+        @include center;
+    }
+    h1 {
+        @include center;
+    }
+}

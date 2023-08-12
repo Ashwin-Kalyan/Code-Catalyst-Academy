@@ -1,0 +1,79 @@
+@import url(./button.css);
+@import url(./keyframes.css);
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper .join-form {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.85rem;
+  background: rgba(30, 30, 30, 0.5);
+  border: 3px solid rgba(30, 30, 30, 0.2);
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  animation: transitionIn 2s;
+  transition: transform 0.5s;
+}
+.wrapper .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+}
+.wrapper .input input {
+  margin-bottom: 0.08rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  border: 2px solid rgba(30, 30, 30, 0.2);
+  height: 0.25rem;
+  width: 17rem;
+  padding: 15px;
+}
+.wrapper .input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.wrapper .input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.wrapper .input input:active {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper .dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.wrapper h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}/*# sourceMappingURL=form.css.map */

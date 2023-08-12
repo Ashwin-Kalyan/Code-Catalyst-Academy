@@ -1,0 +1,64 @@
+@import url("./button.css");
+@import url("./navbar.css");
+@import url("./footer.css");
+@import url("./home-base.css");
+@import url("./contact-bg.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url("../../gfrom.css");
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+* {
+    color: #FFF;
+    font-family: "Nunito", sans-serif;
+}
+.contact-container {
+    height: 100vh;
+    @include flexCenter();
+}
+.contact-box {
+    border: 1px solid #000;
+    height: fit-content;
+    width: fit-content;
+    @include flexCenter();
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.85rem;
+    background: rgba(30, 30, 30, 0.5);
+    border: 3px solid rgba(30, 30, 30, 0.2);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(15px);
+}
+input {
+    margin-bottom: .25rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    border: 2px solid rgba(30, 30, 30, 0.2);
+    height: 2rem;
+    width: 17rem;
+    padding: 15px;
+    &::placeholder {
+        color: rgba(255, 255, 255, .7);
+    }
+    &:active {
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+button {
+    margin-top: 1.5rem;
+    a {
+        font-size: 1.25rem;
+    }
+    
+    font-family: "Times";
+}
